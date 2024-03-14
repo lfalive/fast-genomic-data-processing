@@ -1,0 +1,6 @@
+add_subdirectory(./recalibration)
+
+add_library(Transformers PalindromeArtifactClipReadTransformer.cpp BQSRReadTransformer.cpp BQSRReadTransformer.h)
+
+target_link_libraries(Transformers PUBLIC UtilsFunctions)
+target_link_libraries(Transformers PUBLIC Recalibration)

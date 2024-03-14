@@ -1,0 +1,2 @@
+aux_source_directory(./haplotypecaller DIR_LIB_haplotypecaller_SRCS)
+add_library(ToolsFunctions ${DIR_LIB_haplotypecaller_SRCS} BrentOptimizer.cpp BrentOptimizer.h UnivariatePointValuePair.cpp UnivariatePointValuePair.h)
